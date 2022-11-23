@@ -1,0 +1,653 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Book Store
+  </title>
+  <meta name="description" content="This is our Book Store" />
+
+  <!--this is comment -->
+  <!--this is comment -->
+  <meta name="My Aksam" content="v1.0" />
+
+  <style>
+    body {
+      background-color: darkgray;
+    }
+  </style>
+  <link rel="stylesheet" href="">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <!-- pre,code,iframe -->
+  <pre>
+   <code>
+      var x=3;
+      var y=7;
+      console.loge(X+y);
+    
+   </code>
+
+<iframe  title="elzero" src="https://elzero.org/" width="800" height="600"></iframe>
+  </pre>
+  <h2>Iframe - Target for a Link</h2>
+
+  <iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+  
+  <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+  
+  <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+  
+
+  <code>
+    var x=3;
+    var y=7;
+    console.loge(X+y);
+  
+ </code>
+
+  <q>this is learing page</q>
+  <blockquote>this is learing page</blockquote>
+  <button>click</button>
+
+  <hr>
+
+  <!--form 
+    method="post" ==> for hide the data in url
+   -->
+  <form action="" method="post" novalidate target="_blank">
+
+    <!-- Radio box -->
+    <div>
+
+      <label for="rd_win">
+        Windows
+        <input id="rd_win" type="radio" name="os" value="Windows">
+      </label>
+    </div>
+    <div>
+
+      <label for="rd_lnx">
+        Linux
+        <input id="rd_lnx" type="radio" name="os" value="Linux" checked>
+      </label>
+    </div>
+    <div>
+
+      <label for="rd_mac">
+        Mac
+        <input id="rd_mac" type="radio" name="os" value="Mac">
+      </label>
+    </div>
+    <hr>
+    <!-- Check box -->
+    <div>
+
+      <label for="rd_win1">
+        Windows
+        <input id="rd_win1" type="checkbox" name="os" value="Windows">
+      </label>
+    </div>
+    <div>
+
+      <label for="rd_lnx1">
+        Linux
+        <input id="rd_lnx1" type="checkbox" name="os" value="Linux" checked>
+      </label>
+    </div>
+    <div>
+
+      <label for="rd_mac1">
+        Mac
+        <input id="rd_mac1" type="checkbox" name="os" value="Mac">
+      </label>
+    </div>
+
+    <!-- select    -->
+    <label for="book">
+      Choose Your Book
+      <select name="book" id="book">
+        <optgroup label="Romantic Books">
+          <option value="1">Book1</option>
+          <option value="2" selected>Book2</option>
+          <option value="3">Book3</option>
+        </optgroup>
+        <optgroup label="Police Books">
+          <option value="1">Book1</option>
+          <option value="2">Book2</option>
+          <option value="3">Book3</option>
+        </optgroup>
+      </select>
+    </label>
+
+    <br>
+    <label for="review">
+      Review
+      <textarea name="Review" id="review" cols="30" rows="10" placeholder="Please write your review"></textarea>
+    </label>
+    <br>
+
+
+    <!-- upload file ,search , URL-->
+    <div>
+      <label for="">
+        Upload
+        <input type="file">
+      </label>
+
+    </div>
+    <br>
+    <div>
+      <label>
+        URL
+        <input type="url">
+      </label>
+
+    </div>
+    <br>
+    <div>
+      <label>
+        Search
+       src
+      </label>
+
+    </div>
+    <br>
+    <div>
+      <label>
+        Date
+        <input type="date">
+      </label>
+
+    </div>
+    <br>
+    <div>
+      <label>
+        Month
+        <input type="month">
+      </label>
+
+    </div>
+    <br>
+    <div>
+      <label>
+        Time
+        <input type="time" value="">
+      </label>
+
+    </div>
+
+
+    <!-- inpput data list -->
+    <label>
+      Choose the language
+      <input list="programing" name="prog">
+      <datalist id="programing">
+        <option value="Php"></option>
+        <option value="C#"></option>
+        <option value="C++"></option>
+        <option value="java"></option>
+
+      </datalist>
+    </label>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+      <label>
+        User name
+        <input name="user_name" type="text" value="ahmed" readonly placeholder="User name">
+        <input type="hidden">
+      </label>
+
+    </div>
+    <br>
+    <div>
+      <label>
+        Password
+        <input name="password" type="password" autofocus required placeholder="Password" minlength="8" maxlength="20">
+      </label>
+    </div>
+    <br>
+    <div>
+      <label>
+        Email
+        <input name="email" type="email" required placeholder="Email" value="Ahmed@gmail.com" disabled>
+
+      </label>
+    </div>
+    <br>
+    <label>
+      Color
+      <input name="color" type="color">
+      </div>
+    </label>
+
+    <br>
+    <label>
+      Range
+      <input name="range" type="range" min="0" max="100 " step="20" value="0">
+    </label>
+    </div>
+    <br>
+    <label for="num">
+      Number
+      <input id="num" name="number" type="number" min="0" max="100 " step="10" value="0">
+
+    </label>
+    </div>
+    <br>
+    <input type="reset">
+    <input type="submit">
+  </form>
+
+  <!-- use flexability in construction  -->
+  <header>
+    <h2>Logo</h2>
+    <ul>
+      <li> Home</li>
+      <li> Projectes</li>
+      <li> Services</li>
+      <li> About</li>
+    </ul>
+  </header>
+  <hr>
+  <nav>
+    <ul class="navigation">
+      <h2>22222</h2>
+      <li>link </li>
+      <li>link </li>
+      <li>link </li>
+      <li>link </li>
+      <li>link </li>
+      <li>link </li>
+      <li>link </li>
+      <li>link </li>
+    </ul>
+  </nav>
+  <section>
+    section
+  </section>
+  <figure>
+    <img src="images/swing.jpg" alt="imag">
+    <figcaption>Caption of the image</figcaption>
+  </figure>
+  <hr>
+  <aside> aside</aside>
+  <hr>
+  <footer>
+    footer
+  </footer>
+
+  <!-- USING div at construction -->
+  <div class="header">
+    <h2>Logo</h2>
+    <ul>
+      <li> Home</li>
+      <li> Projectes</li>
+      <li> Services</li>
+      <li> About</li>
+    </ul>
+  </div>
+  <hr>
+  <ul class="navigation">
+    <li>link </li>
+    <li>link </li>
+    <li>link </li>
+    <li>link </li>
+    <li>link </li>
+    <li>link </li>
+    <li>link </li>
+    <li>link </li>
+  </ul>
+  <div class="Content">Content</div>
+  <hr>
+  <div class="Sidebar">Sidebar</div>
+  <hr>
+  <footer>
+    footer
+  </footer>
+
+
+  <div class="romantic">
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+
+
+  </div>
+  <div class="Police">
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+    <div class="Action">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+
+
+  </div>
+  <div class="romantic">
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+    <div class="book">
+      <h3> The Munnel </h3>
+      <p>description</p>
+      <span>100$</span>
+    </div>
+
+
+  </div>
+
+  <audio controls autoplay loop muted>
+    <source src="audio/Mishari Rashid Al Afasy Rahman .mp3" type="audio/mpeg">
+    your Browser does not support Audio Tags
+
+  </audio>
+
+
+
+  <video controls poster="images/swing.jpg" loop muted width="800" height="600">
+    <source src="video/Mishari Rashid Al Afasy - Rahman.mp4" type="audio/mp4">
+    your Browser does not support video Tags
+
+  </video>
+
+
+  <!--
+             thead=>table head (th)
+             tbody=>table body (td)
+             tfoot=>table footer 
+             
+             tr   => table Row
+             th   => table header cell
+             td   => table Data cell
+           -->
+
+  <table  border="1">
+    <caption>Sampa Data</caption>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>type</th>
+        <th>price</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> 1</td>
+        <td> swing rattan</td>
+        <td> 1 person</td>
+        <td> 1800</td>
+
+      </tr>
+      <tr>
+        <td> 2</td>
+        <td> swing rattan</td>
+        <td> 1 person</td>
+        <td> 1500</td>
+
+      </tr>
+      <tr>
+        <td> 3</td>
+        <td> swing rattan</td>
+        <td> 2 person</td>
+        <td> 2500</td>
+
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"> Total </td>
+        <td> 5800 </td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+  <!-- 
+         ul    =>   unOrderd List
+         li    =>     list item
+         ol    => Orderd list
+         dl    => description list
+        reversed => reversed Orderd list
+        start   => start from order 122
+          value  => start from order 122 for the item
+        type   => type of the order list type"a"
+         -->
+  <ul>
+    <li>ahmed
+      <dl>
+        <dt>ahmed</dt>
+        <dd>mohamed</dd>
+        <dt>ahmed</dt>
+        <dd>aya</dd>
+
+      </dl>
+    </li>
+    <li>mohamed</li>
+    <li>aya</li>
+    <li>samy
+      <ol reversed start="100">
+        <li value="23">ahmed</li>
+        <li>mohamed</li>
+        <li>aya</li>
+
+
+      </ol>
+    </li>
+
+
+
+  </ul>
+
+
+  <!-- heading -->
+  <!--
+    b       => bold
+    strong  => bold (important text)
+    i       => italic
+    em      => emphasized
+    mark    => marked text 
+    u       => Underline
+    small   =>small text
+    del     =>deleted or discount
+    ins     => inserted text
+    sub     =>subscript
+    sup     =>superscript
+    span    => make the word inside span as element
+ -->
+
+  <h1> Book Store</h1>
+  <h2> <span style="color: brown;"> Chapter </span>Title inside Book</h2>
+  <h3> Story Title inside Chapter </h3>
+  <hr>
+  <h4> this is my first<small> Page,Welcome </small></h4>
+  <p><del>this is my Book </del><u> Store</u>,Welcome</p>
+  <p><ins>this is my Book </ins><u> Store</u>,Welcome</p>
+  <p> we have a big <mark>Sale</mark> </p>
+  <p>h<sub>2</sub>o</p>
+  <p>2<sup> 2</sup></p>
+
+  <em> Line 1</em>
+  <b>Line 2 </b>
+  <strong>Line 2 </strong>
+  <i>Line 3</i>
+
+  <p></p><img
+    src="data:image/jpeg;base64,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 "
+    alt=" cafe set ">
+  <img src="images/swing.jpg" alt="cafe">
+
+
+
+
+  <!-- href  ممكن اكتب فيها اللينك او اسم الصفحة اللى هى عندى فى المشروع او اسم الid اللى فى نفس الصفحة-->
+  <p></p><a href="http://www.google.com" target="_blank" title="go to www.google.com ">google</a>
+  <a href="http://www.facebook.com" title="Go to www.facebook.com">facebook</a>
+  <a href="#ahmed" title="Go to ahmed pragraph"> ahmed pragraph</a>
+  <a href="mailto:ahmed@gmail.com">comtact us</a>
+  <hr>
+  <div>Lorem ipsum dolor sit amet <wbr> consectetur adipisicing elit. <wbr> Perspiciatis consequuntur fugit ducimus explicabo
+    <wbr>in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?
+  </div>
+  <pre>                                                  2 <bdi>السلام </bdi> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum                         pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</pre>
+  <p> 2 السلام Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus
+    explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p id="ahmed"> <mark> ipsum dolor sit amet consectetur</mark> adipisicing elit. Perspiciatis consequuntur fugit
+    ducimus explicabo in unde nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas
+    deserunt molestias veniam rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur fugit ducimus explicabo in unde
+    nisi, quo exercitationem repellendus eum pariatur sapiente accusamus, voluptates voluptas deserunt molestias veniam
+    rem itaque?</p>
+
+
+  <p class="element">Welcome To The New World</p>
+  <p class='element'>Welcome To The New World</p>
+  <p class=element>Welcome To The New World</p>
+
+</body>
+
+</html>
